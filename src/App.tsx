@@ -1,11 +1,14 @@
 import { useState } from 'react'
 import reactLogo from './assets/react.svg'
 import viteLogo from '/vite.svg'
-import './App.css'
+import './style/App.css'
+import { Route, Routes } from 'react-router-dom'
+import NotFound from './pages/NotFound'
+import { Button } from '@mui/material'
+import ThemeToggleButton from './components/ThemeToggleButton'
 
-function App() {
+const Vite = () => {
   const [count, setCount] = useState(0)
-
   return (
     <>
       <div>
@@ -18,9 +21,7 @@ function App() {
       </div>
       <h1>Vite + React</h1>
       <div className="card">
-        <button onClick={() => setCount((count) => count + 1)}>
-          Count is {count}
-        </button>
+        <Button variant='contained' onClick={() => setCount(count + 1)}>Count is {count}</Button>
         <p>
           Edit <code>src/App.tsx</code> and save to test HMR
         </p>
@@ -28,7 +29,20 @@ function App() {
       <p className="read-the-docs">
         Click on the Vite and React logos to learn more
       </p>
+      <ThemeToggleButton />
     </>
+  );
+}
+
+function App() {
+  return (
+      <Routes>
+        <Route path="/" element={<Vite />} />
+        <Route path='/login' />
+        <Route path='/register' />
+        <Route path='/get-started' />
+        <Route path='*' element={<NotFound />} />
+      </Routes>
   )
 }
 
