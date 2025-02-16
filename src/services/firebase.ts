@@ -1,13 +1,13 @@
 import { FirebaseOptions, initializeApp } from "firebase/app";
 
 const config: FirebaseOptions = {
-    apiKey: import.meta.env.VITE_FIREBASE_API_KEY as string,
-    authDomain: import.meta.env.VITE_FIREBASE_AUTH_DOMAIN as string,
-    projectId: import.meta.env.VITE_FIREBASE_PROJECT_ID as string,
-    storageBucket: import.meta.env.VITE_FIREBASE_STORAGE_BUCKET as string,
-    messagingSenderId: import.meta.env.VITE_FIREBASE_MESSAGING_SENDER_ID as string,
-    appId: import.meta.env.VITE_FIREBASE_APP_ID as string,
-    measurementId: import.meta.env.VITE_FIREBASE_MEASUREMENT_ID as string,
+    apiKey: "AIzaSyBAGd9DDTtn8aAeab4Ydq65yErWAzO7mPg",
+    appId: "1:262073852184:web:b7097acec54647a2f5fe6d",
+    authDomain: "pulsecheck-7cf2b.firebaseapp.com",
+    measurementId: "G-TZTCLTT9EK",
+    messagingSenderId: "262073852184",
+    projectId: "pulsecheck-7cf2b",
+    storageBucket: "pulsecheck-7cf2b.firebasestorage.app"
 }
 
 const app = initializeApp(config);
