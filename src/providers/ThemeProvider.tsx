@@ -1,6 +1,6 @@
 import { useEffect, useMemo, useState } from "react";
 import { ThemeProvider as MuiThemeProvider, PaletteMode } from "@mui/material/styles";
-import { CssBaseline } from "@mui/material";
+import { CssBaseline, useMediaQuery } from "@mui/material";
 import { createCustomTheme } from "../style/theme";
 import { ThemeContext } from "../context/ThemeContext";
 
