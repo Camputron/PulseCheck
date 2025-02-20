@@ -5,12 +5,12 @@ const opts = (mode: PaletteMode): ThemeOptions => ({
 	palette: {
 		mode: mode,
 		primary: {
-			main: teal[700]
+			main: teal[700],
 		},
 		secondary: {
-			main: pink[500]
-		}
-	}
+			main: pink[500],
+		},
+	},
 })
 
 export function createCustomTheme(mode: PaletteMode) {

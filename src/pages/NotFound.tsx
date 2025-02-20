@@ -17,7 +17,7 @@ export default function NotFound() {
 					flexDirection: 'column',
 					alignItems: 'center',
 					justifyContent: 'center',
-					textAlign: 'center'
+					textAlign: 'center',
 				}}>
 				<img
 					src={santa}

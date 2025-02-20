@@ -7,7 +7,7 @@ const config: FirebaseOptions = {
 	measurementId: 'G-TZTCLTT9EK',
 	messagingSenderId: '262073852184',
 	projectId: 'pulsecheck-7cf2b',
-	storageBucket: 'pulsecheck-7cf2b.firebasestorage.app'
+	storageBucket: 'pulsecheck-7cf2b.firebasestorage.app',
 }
 
 const firebase = initializeApp(config)

@@ -10,6 +10,7 @@ const config = {
 	jsxSingleQuote: true,
 	bracketSameLine: true,
 	bracketSpacing: true,
+	endOfLine: "auto",
 	useTabs: true,
 	semi: false,
 };

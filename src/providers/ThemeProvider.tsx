@@ -2,7 +2,7 @@ import React from 'react'
 import { useEffect, useMemo, useState } from 'react'
 import {
 	ThemeProvider as MuiThemeProvider,
-	PaletteMode
+	PaletteMode,
 } from '@mui/material/styles'
 import { CssBaseline } from '@mui/material'
 import { createCustomTheme } from '../style/theme'
