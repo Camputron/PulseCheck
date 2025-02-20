@@ -18,9 +18,9 @@ To run PulseCheck locally, follow the steps below:
 
 ### Prerequisites
 - Node.js installed (recommended version: 22.x or later)
+- Yarn installed globally (run `npm install -g yarn` if not installed)
 
 ### Installation
-
 1. Clone the repository:
    ```bash
    git clone git@github.com:CSC190-289/pulsecheck.git
@@ -31,30 +31,13 @@ To run PulseCheck locally, follow the steps below:
     ```
 3. Install dependencies
     ```bash
-    npm install
+    yarn install
     ```
 ## Development Scripts
-
 The following scripts are available in the `package.json` file:
 
-- **Start Development Server:**  
-  Run the app locally in development mode:  
-    ```bash
-    npm run dev
-    ```
-## Build for Production:
-- **Transpile TypeScript and build he project using Vite:**
-    ```bash
-    npm run build
-    ```
-## Lint:
-- **Check code quality using ESLint**
-    ```bash
-    npm run lint
-    ```
-
-## Preview
-- **Preview the built project using Vite's preview feature:**
-    ```bash
-    npm run preview
-    ```
+- `yarn dev`: Start the app locally in development mode.
+- `yarn build`: Transpile TypeScript and build the project for production.
+- `yarn lint`: Check the code quality using ESLint.
+- `yarn format`: Format the code using Prettier.
+- `yarn preview`: Preview the built project using Vite's preview feature.
