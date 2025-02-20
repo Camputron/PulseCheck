@@ -1,5 +1,5 @@
 import { Box, Button, Container, Typography } from '@mui/material'
-import santa from '../assets/not-found.png'
+import santa from '@/assets/not-found.png'
 import { useNavigate } from 'react-router-dom'
 
 export default function NotFound() {

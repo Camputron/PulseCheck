@@ -1,18 +1,18 @@
 import { useEffect, useState } from 'react'
-import reactLogo from './assets/react.svg'
+import reactLogo from '@/assets/react.svg'
 import viteLogo from '/vite.svg'
 import './style/App.css'
 import { Route, Routes } from 'react-router-dom'
-import NotFound from './pages/NotFound'
+import NotFound from '@/pages/NotFound'
 import { Button } from '@mui/material'
-import ThemeToggleButton from './components/ThemeToggleButton'
-import app from './services/firebase'
+import ThemeToggleButton from '@/components/ThemeToggleButton'
+import firebase from './services/firebase'
 
 const Vite = () => {
 	const [count, setCount] = useState(0)
 
 	useEffect(() => {
-		console.debug(app.options)
+		console.debug('firebase.config', firebase.options)
 	}, [])
 
 	return (

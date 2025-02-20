@@ -10,6 +10,6 @@ const config: FirebaseOptions = {
 	storageBucket: 'pulsecheck-7cf2b.firebasestorage.app'
 }
 
-const app = initializeApp(config)
+const firebase = initializeApp(config)
 
-export default app
+export default firebase

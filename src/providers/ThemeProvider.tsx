@@ -1,3 +1,4 @@
+import React from 'react'
 import { useEffect, useMemo, useState } from 'react'
 import {
 	ThemeProvider as MuiThemeProvider,
@@ -8,7 +9,7 @@ import { createCustomTheme } from '../style/theme'
 import { ThemeContext } from '../context/ThemeContext'
 
 export const ThemeProvider = ({ children }: { children: React.ReactNode }) => {
-	/* detect systme preference */
+	/* detect system preference */
 	// const prefersDarkMode = useMediaQuery("(prefers-color-scheme: dark)");
 	const prefersDarkMode = false
 
