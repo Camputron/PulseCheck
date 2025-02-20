@@ -5,7 +5,7 @@
  * @type {import("prettier").Config}
  */
 const config = {
-	trailingComma: 'none',
+	trailingComma: 'es5',
 	singleQuote: true,
 	jsxSingleQuote: true,
 	bracketSameLine: true,
