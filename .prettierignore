@@ -1,0 +1,20 @@
+# Build artifacts
+dist/
+coverage/
+
+# Ignore all HTML files
+**/*.html
+
+# Documentation
+Documentation/
+
+# Version control folders
+.git/
+.svn/
+.hg/
+
+# Dependencies
+node_modules/
+
+# Firebase Files
+.firebaserc
