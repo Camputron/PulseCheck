@@ -18,7 +18,10 @@ To run PulseCheck locally, follow the steps below:
 
 ### Prerequisites
 - Node.js installed (recommended version: 22.x or later)
+- Corepack enabled (run `corepack enable`)
+  - On Windows, you may have to run your terminal as administrator in order to enable corepack. 
 - Yarn installed globally (run `npm install -g yarn` if not installed)
+
 
 ### Installation
 1. Clone the repository:
