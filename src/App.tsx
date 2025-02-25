@@ -12,9 +12,7 @@ import Register from "./pages/Register"
 import GetStarted from "./pages/GetStarted"
 import PrivacyPolicy from "./pages/PrivacyPolicy"
 import TermsOfService from "./pages/TermsOfService"
-import { useEffect, useState } from 'react'
-import Splash from '@/pages/Splash'
-import { useNavigate } from 'react-router-dom'
+import Splash from "./pages/Splash"
 
 
 const Vite = () => {
@@ -52,7 +50,7 @@ export default function App() {
     <React.Fragment>
       <NavBar />
       <Routes>
-        <Route path='/' element={<Vite />} />
+        <Route path='/' element={<Splash />} />
         <Route path='/login' element={<Login />} />
         <Route path='/register' element={<Register />} />
         <Route path='/get-started' element={<GetStarted />} />
@@ -62,3 +60,4 @@ export default function App() {
       </Routes>
     </React.Fragment>
   )
+}
