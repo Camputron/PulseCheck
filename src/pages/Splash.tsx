@@ -1,6 +1,8 @@
 import { Box, Button, Container, Typography } from '@mui/material'
 import { useNavigate } from 'react-router-dom'
-import GetStarted from './pages/get-started'
+import About from "../components/splash/About.tsx"
+import FAQs from "../components/splash/FAQs.tsx"
+import Features from "../components/splash/Features.tsx"
 
 export default function Splash(){
     const navigate = useNavigate()
@@ -34,11 +36,23 @@ export default function Splash(){
                  passive -- they’re part of the conversation. Instructors 
                  get instant feedback, making every session more dynamic and alive.				
                 </Typography>
-
-
-
-                
             </Box>
+            <About/>
+            <FAQs/>
+            <Features/>
+            <br></br>
+            <br></br>
+            <br></br>
+            <br></br>
+            <br></br>
+            <br></br>
+            <br></br>
+            <br></br>
+            <br></br>
+            <br></br>
+            <br></br>
+            <br></br>
+            <br></br>
 
 
         </Container>

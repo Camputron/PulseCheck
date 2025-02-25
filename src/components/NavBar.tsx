@@ -33,6 +33,12 @@ export default function NavBar() {
     handleClose()
   }
 
+  const handleFeatures = () => {
+    // TODO - go to Features
+    void navigate("/")
+    handleClose()
+  }
+
   return (
     <AppBar position='static'>
       <Toolbar>
@@ -46,6 +52,7 @@ export default function NavBar() {
           onClose={handleClose}>
           <MenuItem onClick={handleHome}>Home</MenuItem>
           <MenuItem onClick={handleAbout}>About</MenuItem>
+          <MenuItem onClick={handleFeatures}>Features</MenuItem>
         </Menu>
         <Typography
           variant='h6'
