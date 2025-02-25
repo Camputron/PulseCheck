@@ -1,4 +1,6 @@
-import { FirebaseOptions, initializeApp } from "firebase/app"
+import { initializeApp, FirebaseOptions } from "firebase/app"
+import { getAuth } from "firebase/auth"
+import { getFirestore } from "firebase/firestore"
 
 const config: FirebaseOptions = {
   apiKey: "AIzaSyBAGd9DDTtn8aAeab4Ydq65yErWAzO7mPg",
@@ -10,6 +12,8 @@ const config: FirebaseOptions = {
   storageBucket: "pulsecheck-7cf2b.firebasestorage.app",
 }
 
-const firebase = initializeApp(config)
+export const api = initializeApp(config)
 
-export default firebase
+export const auth = getAuth(api)
+
+export const db = getFirestore(api)

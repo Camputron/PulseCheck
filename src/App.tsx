@@ -1,4 +1,4 @@
-import { useEffect, useState } from "react"
+import React, { useState } from "react"
 import reactLogo from "@/assets/react.svg"
 import viteLogo from "/vite.svg"
 import "./style/App.css"
@@ -6,14 +6,15 @@ import { Route, Routes } from "react-router-dom"
 import NotFound from "@/pages/NotFound"
 import { Button } from "@mui/material"
 import ThemeToggleButton from "@/components/ThemeToggleButton"
-import firebase from "./services/firebase"
+import NavBar from "./components/NavBar"
+import Login from "./pages/Login"
+import Register from "./pages/Register"
+import GetStarted from "./pages/GetStarted"
+import PrivacyPolicy from "./pages/PrivacyPolicy"
+import TermsOfService from "./pages/TermsOfService"
 
 const Vite = () => {
   const [count, setCount] = useState(0)
-
-  useEffect(() => {
-    console.debug("firebase.config", firebase.options)
-  }, [])
 
   return (
     <>
@@ -44,12 +45,17 @@ const Vite = () => {
 
 export default function App() {
   return (
-    <Routes>
-      <Route path='/' element={<Vite />} />
-      <Route path='/login' />
-      <Route path='/register' />
-      <Route path='/get-started' />
-      <Route path='*' element={<NotFound />} />
-    </Routes>
+    <React.Fragment>
+      <NavBar />
+      <Routes>
+        <Route path='/' element={<Vite />} />
+        <Route path='/login' element={<Login />} />
+        <Route path='/register' element={<Register />} />
+        <Route path='/get-started' element={<GetStarted />} />
+        <Route path='/privacy-policy' element={<PrivacyPolicy />} />
+        <Route path='/terms-of-service' element={<TermsOfService />} />
+        <Route path='*' element={<NotFound />} />
+      </Routes>
+    </React.Fragment>
   )
 }
