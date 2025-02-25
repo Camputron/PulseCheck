@@ -6,12 +6,11 @@
  */
 const config = {
 	trailingComma: 'es5',
-	singleQuote: true,
+	singleQuote: false,
 	jsxSingleQuote: true,
 	bracketSameLine: true,
 	bracketSpacing: true,
 	endOfLine: "auto",
-	useTabs: true,
 	semi: false,
 };
 

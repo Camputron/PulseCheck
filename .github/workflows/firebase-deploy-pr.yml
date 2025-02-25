@@ -20,7 +20,7 @@ jobs:
           corepack enable
           corepack prepare yarn@stable --activate
 
-      - name: Install
+      - name: Install Dependencies
         run: yarn install
 
       - name: Build
