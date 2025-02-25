@@ -12,6 +12,10 @@ import Register from "./pages/Register"
 import GetStarted from "./pages/GetStarted"
 import PrivacyPolicy from "./pages/PrivacyPolicy"
 import TermsOfService from "./pages/TermsOfService"
+import { useEffect, useState } from 'react'
+import Splash from '@/pages/Splash'
+import { useNavigate } from 'react-router-dom'
+
 
 const Vite = () => {
   const [count, setCount] = useState(0)
@@ -58,4 +62,3 @@ export default function App() {
       </Routes>
     </React.Fragment>
   )
-}
