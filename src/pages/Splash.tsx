@@ -1,8 +1,13 @@
 import { Box, Button, Container, Typography } from '@mui/material'
 import { useNavigate } from 'react-router-dom'
+import GetStarted from './pages/get-started'
 
 export default function Splash(){
+    const navigate = useNavigate()
 
+    const handleClick = () => {
+    void navigate('/get-started')
+  }
 
 
     return (
@@ -19,7 +24,7 @@ export default function Splash(){
                 <Typography variant='h4' margin={4} gutterBottom>
                     Turning Dead Time into Real-Time Learning!
 				</Typography>
-                <Button variant='contained' color='primary' margin={4} onClick={null}>
+                <Button variant='contained' color='primary' margin={4} onClick={handleClick}>
 					Get Started
 				</Button>
                 <Typography variant='body1'  margin={4} gutterBottom>
