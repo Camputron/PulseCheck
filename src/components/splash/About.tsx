@@ -1,9 +1,9 @@
 import { Box, Typography } from "@mui/material"
 import React, { forwardRef } from "react"
 
-function About(props, ref) {
+function About(props) {
   return (
-    <div ref = {ref}> 
+    <div ref = {props.ref}> 
       <Box>
       <Typography variant='h6' margin = {4} gutterBottom align = 'left'> 
       About
