@@ -24,4 +24,4 @@ function FAQs(props, ref) {
   )
 }
 
-export default forwardRef(FAQs);
+export default FAQs

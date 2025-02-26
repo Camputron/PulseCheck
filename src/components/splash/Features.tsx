@@ -24,4 +24,4 @@ function Features(props, ref) {
   )
 }
 
-export default forwardRef(Features)
+export default Features
