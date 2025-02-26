@@ -1,12 +1,34 @@
 import { Box, Button, Container, Typography } from '@mui/material'
-import { useNavigate } from 'react-router-dom'
+import { useNavigate, useLocation } from 'react-router-dom'
+import { useEffect, useRef } from "react"
 import About from "../components/splash/About.tsx"
 import FAQs from "../components/splash/FAQs.tsx"
 import Features from "../components/splash/Features.tsx"
 
 export default function Splash(){
 
+    const location = useLocation(); // Gets current location
+    
+    const aboutRef = useRef<HTMLDivElement>(null); // Stores reference to "About" section
+    const faqRef = useRef<HTMLDivElement>(null); // Stores reference to "FAQs" section
+    const featuredRef = useRef<HTMLDivElement>(null); // Stores reference to "Features" section
 
+    useEffect(() => {
+        if (location.state?.scrollTo) { // When the location changes...
+            const target = location.state.scrollTo; 
+            let destination = null;
+
+            if (target === "about") { // Sets destination based on the "scrollTo" state from the navbar
+                destination = aboutRef.current;
+            } else if (target === "faqs") {
+                destination = faqRef.current;
+            } else if (target === "features") {
+                destination = featuredRef.current;
+            }
+
+            destination?.scrollIntoView({behavior: "smooth"}); // Smooth scroll to the desination
+        }
+    }, [location])
 
     return (
         <Container>
@@ -33,22 +55,9 @@ export default function Splash(){
                  get instant feedback, making every session more dynamic and alive.				
                 </Typography>
             </Box>
-            <About/>
-            <FAQs/>
-            <Features/>
-            <br></br>
-            <br></br>
-            <br></br>
-            <br></br>
-            <br></br>
-            <br></br>
-            <br></br>
-            <br></br>
-            <br></br>
-            <br></br>
-            <br></br>
-            <br></br>
-            <br></br>
+            <About ref={aboutRef}/>
+            <FAQs ref={faqRef}/>
+            <Features ref={featuredRef}/>
 
 
         </Container>
