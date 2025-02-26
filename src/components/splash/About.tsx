@@ -5,8 +5,8 @@ export default function About() {
   return (
     <React.Fragment>
       <Box 
-        textAlign= {'left'}
-        marginInLine ={4} >
+          textAlign= {'left'}
+          marginAlign={4}>
          
           <Typography 
             variant='h5'>
