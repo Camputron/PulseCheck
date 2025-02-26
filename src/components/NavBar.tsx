@@ -30,12 +30,19 @@ export default function NavBar() {
 
   const handleAbout = () => {
     /* TODO - go to about */
+    void navigate("/", {state: { scrollTo: "about"}});
+    handleClose()
+  }
+
+  const handleFAQs= () => {
+    /* TODO - go to about */
+    void navigate("/", {state: { scrollTo: "faqs"}});
     handleClose()
   }
 
   const handleFeatures = () => {
     // TODO - go to Features
-    void navigate("/")
+    void navigate("/", {state: { scrollTo: "features"}});
     handleClose()
   }
 
@@ -52,6 +59,7 @@ export default function NavBar() {
           onClose={handleClose}>
           <MenuItem onClick={handleHome}>Home</MenuItem>
           <MenuItem onClick={handleAbout}>About</MenuItem>
+          <MenuItem onClick={handleFAQs}>FAQs</MenuItem>
           <MenuItem onClick={handleFeatures}>Features</MenuItem>
         </Menu>
         <Typography
