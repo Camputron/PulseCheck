@@ -5,8 +5,8 @@ import React from "react"
 export default function GetStarted() {
   return (
     <React.Fragment>
-      <Typography variant="h4" margin={4}>
-        Join as 
+      <Typography variant='h4' margin={4}>
+        Join as
       </Typography>
     </React.Fragment>
   )

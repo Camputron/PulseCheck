@@ -14,7 +14,6 @@ import PrivacyPolicy from "./pages/PrivacyPolicy"
 import TermsOfService from "./pages/TermsOfService"
 import Splash from "./pages/Splash"
 
-
 const Vite = () => {
   const [count, setCount] = useState(0)
 
