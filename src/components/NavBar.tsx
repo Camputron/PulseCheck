@@ -33,6 +33,10 @@ export default function NavBar() {
     handleClose()
   }
 
+  const handleToS = () => {
+     void navigate('/terms-of-service')
+  }
+  
   const handleFeatures = () => {
     // TODO - go to Features
     void navigate("/")
@@ -52,6 +56,7 @@ export default function NavBar() {
           onClose={handleClose}>
           <MenuItem onClick={handleHome}>Home</MenuItem>
           <MenuItem onClick={handleAbout}>About</MenuItem>
+          <MenuItem onClick={handleToS}>Terms of Service</MenuItem>
           <MenuItem onClick={handleFeatures}>Features</MenuItem>
         </Menu>
         <Typography
