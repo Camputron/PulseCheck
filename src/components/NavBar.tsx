@@ -1,4 +1,3 @@
-import TermsOfService from "@/pages/TermsOfService"
 import { Menu as MenuIcon } from "@mui/icons-material"
 import {
   AppBar,
@@ -36,6 +35,11 @@ export default function NavBar() {
 
   const handleToS = () => {
      void navigate('/terms-of-service')
+  }
+  
+  const handleFeatures = () => {
+    // TODO - go to Features
+    void navigate("/")
     handleClose()
   }
 
@@ -53,6 +57,7 @@ export default function NavBar() {
           <MenuItem onClick={handleHome}>Home</MenuItem>
           <MenuItem onClick={handleAbout}>About</MenuItem>
           <MenuItem onClick={handleToS}>Terms of Service</MenuItem>
+          <MenuItem onClick={handleFeatures}>Features</MenuItem>
         </Menu>
         <Typography
           variant='h6'

@@ -1,8 +1,15 @@
 import { Box, Button, Container, Typography } from '@mui/material'
 import { useNavigate } from 'react-router-dom'
+import About from "../components/splash/About.tsx"
+import FAQs from "../components/splash/FAQs.tsx"
+import Features from "../components/splash/Features.tsx"
 
 export default function Splash(){
+    const navigate = useNavigate()
 
+    const handleClick = () => {
+    void navigate('/get-started')
+  }
 
 
     return (
@@ -19,7 +26,7 @@ export default function Splash(){
                 <Typography variant='h4' margin={4} gutterBottom>
                     Turning Dead Time into Real-Time Learning!
 				</Typography>
-                <Button variant='contained' color='primary' margin={4} onClick={null}>
+                <Button variant='contained' color='primary' margin={4} onClick={handleClick}>
 					Get Started
 				</Button>
                 <Typography variant='body1'  margin={4} gutterBottom>
@@ -29,11 +36,23 @@ export default function Splash(){
                  passive -- they’re part of the conversation. Instructors 
                  get instant feedback, making every session more dynamic and alive.				
                 </Typography>
-
-
-
-                
             </Box>
+            <About/>
+            <FAQs/>
+            <Features/>
+            <br></br>
+            <br></br>
+            <br></br>
+            <br></br>
+            <br></br>
+            <br></br>
+            <br></br>
+            <br></br>
+            <br></br>
+            <br></br>
+            <br></br>
+            <br></br>
+            <br></br>
 
 
         </Container>
