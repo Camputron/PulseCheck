@@ -30,23 +30,23 @@ export default function NavBar() {
 
   const handleAbout = () => {
     /* TODO - go to about */
-    void navigate("/", {state: { scrollTo: "about"}});
+    void navigate("/", { state: { scrollTo: "about" } })
     handleClose()
   }
 
-  const handleFAQs= () => {
+  const handleFAQs = () => {
     /* TODO - go to about */
-    void navigate("/", {state: { scrollTo: "faqs"}});
+    void navigate("/", { state: { scrollTo: "faqs" } })
     handleClose()
   }
 
   const handleToS = () => {
-     void navigate('/terms-of-service')
+    void navigate("/terms-of-service")
   }
-  
+
   const handleFeatures = () => {
     // TODO - go to Features
-    void navigate("/", {state: { scrollTo: "features"}});
+    void navigate("/", { state: { scrollTo: "features" } })
     handleClose()
   }
 
