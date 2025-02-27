@@ -1,6 +1,7 @@
 import { Menu as MenuIcon } from "@mui/icons-material"
 import {
   AppBar,
+  Box,
   IconButton,
   Menu,
   MenuItem,
@@ -9,10 +10,14 @@ import {
 } from "@mui/material"
 import { useState } from "react"
 import { useNavigate } from "react-router-dom"
+import { useAuthState } from "react-firebase-hooks/auth"
+import { auth } from "@/services/firebase"
+import ProfileBadge from "./ProfileBadge"
 
 export default function NavBar() {
   const [anchorEl, setAnchorEl] = useState<HTMLElement | null>()
   const navigate = useNavigate()
+  const [user] = useAuthState(auth)
 
   const handleMenu = (event: React.MouseEvent<HTMLElement>) => {
     setAnchorEl(event.currentTarget)
@@ -34,9 +39,9 @@ export default function NavBar() {
   }
 
   const handleToS = () => {
-     void navigate('/terms-of-service')
+    void navigate("/terms-of-service")
   }
-  
+
   const handleFeatures = () => {
     // TODO - go to Features
     void navigate("/")
@@ -66,6 +71,8 @@ export default function NavBar() {
           sx={{ cursor: "pointer" }}>
           PulseCheck
         </Typography>
+        <Box flexGrow={1} />
+        {user && <ProfileBadge />}
       </Toolbar>
     </AppBar>
   )
