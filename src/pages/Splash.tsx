@@ -1,7 +1,7 @@
 import { Box, Button, Container, Typography } from "@mui/material"
 import { useNavigate } from "react-router-dom"
 import About from "../components/splash/About.tsx"
-import FAQs from "../components/splash/FAQs.tsx"
+import FAQs from "../components/splash/FAQs.tsx";
 import Features from "../components/splash/Features.tsx"
 
 export default function Splash() {
@@ -12,7 +12,7 @@ export default function Splash() {
   }
 
   return (
-    <Container>
+    <Container maxWidth='md'>
       <Box
         sx={{
           display: "flex",
@@ -20,6 +20,7 @@ export default function Splash() {
           alignItems: "center",
           justifyContent: "center",
           textAlign: "center",
+
           // marginBottom: 64,
         }}>
         <Typography variant='h4' margin={4} gutterBottom>
