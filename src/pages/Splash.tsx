@@ -30,7 +30,7 @@ export default function Splash(){
 					Get Started
 				</Button>
                 <Typography variant='body1'  margin={4} gutterBottom>
-                PulseCheck brings your classroom back to life by turning
+                 PulseCheck brings your classroom back to life by turning
                  silent lectures into interactive learning experiences. 
                  With real-time polls and quizzes, students are no longer 
                  passive -- they’re part of the conversation. Instructors 
