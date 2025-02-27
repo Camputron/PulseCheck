@@ -4,7 +4,7 @@ import React from "react"
 export default function Register() {
   return (
     <React.Fragment>
-      <Typography>Register Page Goes Here</Typography>
+      <Typography> Sorry Brando he made me do it</Typography>
     </React.Fragment>
   )
 }
