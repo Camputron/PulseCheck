@@ -34,9 +34,9 @@ export default function NavBar() {
   }
 
   const handleToS = () => {
-     void navigate('/terms-of-service')
+    void navigate("/terms-of-service")
   }
-  
+
   const handleFeatures = () => {
     // TODO - go to Features
     void navigate("/")

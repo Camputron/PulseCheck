@@ -13,7 +13,7 @@ import GetStarted from "./pages/GetStarted"
 import PrivacyPolicy from "./pages/PrivacyPolicy"
 import TermsOfService from "./pages/TermsOfService"
 import Splash from "./pages/Splash"
-
+import PollLobby from "./pages/PollLobby"
 
 const Vite = () => {
   const [count, setCount] = useState(0)
@@ -54,6 +54,7 @@ export default function App() {
         <Route path='/login' element={<Login />} />
         <Route path='/register' element={<Register />} />
         <Route path='/get-started' element={<GetStarted />} />
+        <Route path='/poll-lobby' element={<PollLobby />} />
         <Route path='/privacy-policy' element={<PrivacyPolicy />} />
         <Route path='/terms-of-service' element={<TermsOfService />} />
         <Route path='*' element={<NotFound />} />
