@@ -5,7 +5,7 @@ export default function About() {
   return (
     <React.Fragment> 
       <Box>
-      <Typography variant='h6' margin = {4} gutterBottom align = "left"> 
+      <Typography variant='h6' margin = {4} sx={{fontWeight: 'Bold'}}> 
       About
       </Typography>
       </Box>

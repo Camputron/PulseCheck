@@ -4,29 +4,28 @@ import AccordionSummary from '@mui/material/AccordionSummary';
 import AccordionDetails from '@mui/material/AccordionDetails';
 import React from "react"
 
+
 export default function FAQs() {
   return (
     <React.Fragment>
-    <Box>
-    <Typography variant='body1' margin = {4} gutterBottom align = "left"> 
+    <Box >
+      <Typography variant='h6' margin = {4} sx={{fontWeight: 'Bold'}}> 
       FAQs
     </Typography>
 
      </Box>
-
-      <Accordion>       
-        <AccordionSummary sx={{fontweight: 'Bold'}}>
+      <Accordion sx={{ marginBottom: 2}}>       
+        <AccordionSummary sx={{fontWeight: 'Bold'}}>
           Q: How do I participate in a quiz or poll?
         </AccordionSummary>
-        
         <AccordionDetails>
           A: Simply log in to the PulseCheck platform on your device and join the session using the 
           provided quiz or poll link from your instructor. 
         </AccordionDetails>
       </Accordion>
 
-      <Accordion>
-      <AccordionSummary>
+      <Accordion sx={{ marginBottom: 2}}>
+      <AccordionSummary sx={{fontWeight: 'Bold'}}>
           Q: Can I access my quiz results?
           </AccordionSummary>
         <AccordionDetails>
@@ -35,8 +34,8 @@ export default function FAQs() {
         </AccordionDetails>
       </Accordion>
 
-      <Accordion>
-      <AccordionSummary>
+      <Accordion sx={{ marginBottom: 2}}>
+      <AccordionSummary sx={{fontWeight: 'Bold'}}>
           Q: How does PulseCheck track attendance?
           </AccordionSummary>
         <AccordionDetails>
@@ -44,8 +43,8 @@ export default function FAQs() {
         </AccordionDetails>
       </Accordion>
 
-      <Accordion>
-      <AccordionSummary>
+      <Accordion sx={{ marginBottom: 2}}>
+      <AccordionSummary sx={{fontWeight: 'Bold'}}>
           Q: Can I use PulseCheck on my phone?
           </AccordionSummary>
         <AccordionDetails>
