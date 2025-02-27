@@ -11,8 +11,8 @@ export default function GuestJoin() {
   //Goes to the get started page
   const handleClickL = () => {
     //void navigate("/poll-lobby")
-    console.debug("Name: " +  displayName);
-    console.debug("Room Code: " + roomCode);
+    void AddingUserToRoom(displayName, roomCode);
+
   }
   const handleClickA = () => {
     void navigate("/register")
@@ -23,7 +23,7 @@ export default function GuestJoin() {
 //   }
   
   const handleClickTest = () => {
-    void AddingUserToRoom();
+    void AddingUserToRoom(displayName, roomCode);
   }
 
   return (

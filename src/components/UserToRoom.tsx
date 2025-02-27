@@ -1,14 +1,18 @@
 import { collection, addDoc, Firestore, setDoc, doc} from "firebase/firestore"; 
 import { db } from "../services/firebase"
 
-export function AddingUserToRoom (){
+const displayname= "vic";
+const roomCode ="111111"
+
+
+export function AddingUserToRoom (displayName:string,roomCode:string){
     
     const Rooms = doc(db,'test/OQyXluqZyGwghmU0cydh');
 
     async function writeUserToRoom(){
         const docData = {
-            DisplayName: "John",
-            RoomCode: '123456',
+            DisplayName: displayName,
+            RoomCode: roomCode,
             points: 15,
             Email: null,
             ID: 1101
