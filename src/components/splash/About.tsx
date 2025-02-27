@@ -3,11 +3,11 @@ import React from "react"
 
 export default function About() {
   return (
-    <React.Fragment> 
+    <React.Fragment>
       <Box>
-      <Typography variant='h6' margin = {4} gutterBottom align = "left"> 
-      About
-      </Typography>
+        <Typography variant='h6' margin={4} gutterBottom align='left'>
+          About
+        </Typography>
       </Box>
     </React.Fragment>
   )
