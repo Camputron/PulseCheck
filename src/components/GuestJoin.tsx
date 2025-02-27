@@ -1,6 +1,7 @@
 import { Box, Button, Container, TextField, Typography } from "@mui/material"
 import { useNavigate } from "react-router-dom"
 import { useState } from "react"
+import {AddingUserToRoom} from "./UserToRoom"
 
 export default function GuestJoin() {
   const navigate = useNavigate()
@@ -20,9 +21,10 @@ export default function GuestJoin() {
 //   const getInfo = () => {
 // );
 //   }
-
-  console.debug("Name: " +  displayName);
-  console.debug("Room Code: " + roomCode);
+  
+  const handleClickTest = () => {
+    void AddingUserToRoom();
+  }
 
   return (
     <Container
@@ -73,6 +75,15 @@ export default function GuestJoin() {
           fullWidth>
           {" "}
           CREATE AN ACCOUNT{" "}
+        </Button>
+
+        <Button
+          variant='contained'
+          color='primary'
+          onClick={handleClickTest}
+          fullWidth>
+          {" "}
+          Testing{" "}
         </Button>
       </Box>
     </Container>

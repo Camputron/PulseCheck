@@ -1,16 +1,13 @@
 import { Box, Typography } from "@mui/material"
-import React from "react"
 
-function FAQs(props) {
+function FAQs(props: { ref: React.Ref<HTMLDivElement> }) {
   return (
     <div ref={props.ref}>
-      <Box> 
-        <Typography variant='h6' margin={4} gutterBottom align='left'>
-          FAQs
-        </Typography>
+      <Box textAlign={"left"}>
+        <Typography variant='h5'>FAQs</Typography>
 
         {/* PLACEHOLDER TEXT, GET RID OF THIS!! */}
-        <Typography variant='subtitle2' margin={4} gutterBottom align='left'>
+        <Typography variant='subtitle2'>
           Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
           eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad
           minim veniam, quis nostrud exercitation ullamco laboris nisi ut

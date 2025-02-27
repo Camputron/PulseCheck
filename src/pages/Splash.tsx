@@ -5,23 +5,28 @@ import About from "../components/splash/About.tsx"
 import FAQs from "../components/splash/FAQs.tsx"
 import Features from "../components/splash/Features.tsx"
 
+interface LocationState {
+  scrollTo?: string
+}
+
 export default function Splash() {
   const navigate = useNavigate()
 
   const handleClick = () => {
     void navigate("/get-started")
   }
-  const location = useLocation() // Gets current location
+  const location = useLocation()
 
   const aboutRef = useRef<HTMLDivElement>(null) // Stores reference to "About" section
   const faqRef = useRef<HTMLDivElement>(null) // Stores reference to "FAQs" section
   const featuredRef = useRef<HTMLDivElement>(null) // Stores reference to "Features" section
 
   useEffect(() => {
-    if (location.state?.scrollTo) {
+    const locstate = location.state as LocationState
+    if (locstate?.scrollTo) {
       // When the location changes...
-      const target = location.state.scrollTo
-      let destination = null
+      const target = locstate.scrollTo
+      let destination: HTMLDivElement | null = null
 
       if (target === "about") {
         // Sets destination based on the "scrollTo" state from the navbar
