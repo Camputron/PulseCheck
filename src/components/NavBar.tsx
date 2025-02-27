@@ -55,6 +55,11 @@ export default function NavBar() {
     handleClose()
   }
 
+  const handlePP = () => {
+    // TODO - go to Features
+    void navigate("/privacy-policy")
+  }
+
   return (
     <AppBar position='static'>
       <Toolbar>
@@ -71,6 +76,7 @@ export default function NavBar() {
           <MenuItem onClick={handleFeatures}>Features</MenuItem>
           <MenuItem onClick={handleFAQs}>FAQs</MenuItem>
           <MenuItem onClick={handleToS}>Terms of Service</MenuItem>
+          <MenuItem onClick={handlePP}>Privacy Policy</MenuItem>
         </Menu>
         <Typography
           variant='h6'
