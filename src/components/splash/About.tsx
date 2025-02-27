@@ -5,10 +5,10 @@ export default function About() {
   return (
     <React.Fragment>
       <Box 
-          textAlign= {'left'}
-          marginAlign={4}>
-         
-          <Typography 
+          textAlign= {'left'} >
+          
+        
+          <Typography
             variant='h5'>
             About
           </Typography>
@@ -18,7 +18,7 @@ export default function About() {
             PulseCheck: Reinventing the Classroom Experience
           </Typography>
           <Typography 
-            variant='subtitle1' >
+            variant='subtitle1' gutterBottom >
             PulseCheck was created to address the challenges of engaging
             students in large lecture halls. As classrooms grow, keeping
             students attentive and involved becomes a monumental task. Our goal
