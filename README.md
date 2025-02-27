@@ -40,7 +40,9 @@ To run PulseCheck locally, follow the steps below:
 The following scripts are available in the `package.json` file:
 
 - `yarn dev`: Starts the app for development.
+- `yarn test`: Runs test scripts using [Vitest](https://vitest.dev/)
 - `yarn build`: Builds the app for production.
 - `yarn lint`: Checks source code quality using ESLint.
 - `yarn format`: Formats source code using Prettier.
+- `yarn format:check`: Lists source files that do not follow the project's configured format rules.
 - `yarn preview`: Previews the project's production build.
