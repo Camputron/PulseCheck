@@ -10,6 +10,11 @@ import PrivacyPolicy from "./pages/PrivacyPolicy"
 import TermsOfService from "./pages/TermsOfService"
 import Splash from "./pages/Splash"
 import PollLobby from "./pages/PollLobby"
+import Profile from "./pages/Profile"
+import PollView from "./pages/PollView"
+import PollResults from "./pages/PollResults"
+import PollEditor from "./pages/PollEditor"
+import Dashboard from "./pages/Dashboard"
 
 export default function App() {
   return (
@@ -23,6 +28,13 @@ export default function App() {
         <Route path='/poll-lobby' element={<PollLobby />} />
         <Route path='/privacy-policy' element={<PrivacyPolicy />} />
         <Route path='/terms-of-service' element={<TermsOfService />} />
+        <Route path='/login' element={<Login />} />
+        <Route path='/dashboard' element={<Dashboard />} />
+        <Route path='/poll/:id/edit' element={<PollEditor />} />
+        <Route path='/poll/:id/results' element={<PollResults />} />
+        <Route path='/poll/:id' element={<PollView />} />
+        <Route path='/profile' element={<Profile />} />
+
         <Route path='*' element={<NotFound />} />
       </Routes>
     </React.Fragment>
