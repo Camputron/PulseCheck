@@ -47,7 +47,7 @@ export default function Splash() {
           textAlign: "center",
           // marginBottom: 64,
         }}>
-        <Typography []\/</Box>variant='h4' margin={4} gutterBottom>
+        <Typography variant='h4' margin={4} gutterBottom>
           Turning Dead Time into Real-Time Learning!
         </Typography>
         <Button
