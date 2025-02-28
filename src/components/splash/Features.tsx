@@ -3,13 +3,13 @@ import { Box, Typography } from "@mui/material"
 function Features(props: { ref: React.Ref<HTMLDivElement> }) {
   return (
     <div ref={props.ref}>
-      <Box>
-        <Typography variant='h6' margin={4} gutterBottom align='left'>
+      <Box textAlign={"left"}>
+        <Typography variant='h5' fontWeight={700}>
           Features
         </Typography>
 
         {/* PLACEHOLDER TEXT, GET RID OF THIS!! */}
-        <Typography variant='subtitle2' margin={4} gutterBottom align='left'>
+        <Typography variant='subtitle2'>
           Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
           eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad
           minim veniam, quis nostrud exercitation ullamco laboris nisi ut
