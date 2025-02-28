@@ -1,5 +1,5 @@
 import React from "react"
-import "./style/App.css"
+import "./styles/App.css"
 import { Route, Routes } from "react-router-dom"
 import NotFound from "@/pages/NotFound"
 import NavBar from "./components/NavBar"

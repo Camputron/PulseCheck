@@ -11,7 +11,7 @@ import {
 import { useState } from "react"
 import { useNavigate } from "react-router-dom"
 import { useAuthState } from "react-firebase-hooks/auth"
-import { auth } from "@/services/firebase"
+import { auth } from "@/core/api/firebase"
 import ProfileBadge from "./ProfileBadge"
 
 export default function NavBar() {

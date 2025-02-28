@@ -4,7 +4,7 @@ import {
   SnackbarContext,
   SnackbarOptions,
   SeverityType,
-} from "@/context/SnackbarContext"
+} from "@/core/contexts/SnackbarContext"
 
 const DEFAULT_TYPE = "info"
 const DEFAULT_DURATION = 3000

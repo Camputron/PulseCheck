@@ -5,8 +5,8 @@ import {
   PaletteMode,
 } from "@mui/material/styles"
 import { CssBaseline } from "@mui/material"
-import { createCustomTheme } from "../style/theme"
-import { ThemeContext } from "../context/ThemeContext"
+import { createCustomTheme } from "@/styles/theme"
+import { ThemeContext } from "@/core/contexts/ThemeContext"
 
 export const ThemeProvider = ({ children }: { children: React.ReactNode }) => {
   /* detect system preference */
