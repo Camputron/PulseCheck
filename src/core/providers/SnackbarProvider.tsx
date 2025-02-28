@@ -4,7 +4,11 @@ import {
   SnackbarContext,
   SnackbarOptions,
   SeverityType,
+<<<<<<< HEAD
 } from "@/core/contexts/SnackbarContext"
+=======
+} from "@/core/context/SnackbarContext"
+>>>>>>> c292a8a4320a4a2d7d3a82d0c6578569fae2994f
 
 const DEFAULT_TYPE = "info"
 const DEFAULT_DURATION = 3000
