@@ -2,7 +2,7 @@ import { Box, Button, Container, Typography } from "@mui/material"
 import { useNavigate, useLocation } from "react-router-dom"
 import { useEffect, useRef } from "react"
 import About from "../components/splash/About.tsx"
-import FAQs from "../components/splash/FAQs.tsx"
+import FAQs from "../components/splash/FAQs.tsx";
 import Features from "../components/splash/Features.tsx"
 
 interface LocationState {
@@ -42,7 +42,7 @@ export default function Splash() {
   }, [location])
 
   return (
-    <Container>
+    <Container maxWidth='md'>
       <Box
         sx={{
           display: "flex",
@@ -50,6 +50,7 @@ export default function Splash() {
           alignItems: "center",
           justifyContent: "center",
           textAlign: "center",
+
           // marginBottom: 64,
         }}>
         <Typography variant='h4' margin={4} gutterBottom>
