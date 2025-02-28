@@ -5,9 +5,9 @@ const displayname= "vic";
 const roomCode ="111111"
 
 
-export function AddingUserToRoom (displayName:string,roomCode:string){
+export function AddingUserToRoom (displayName:string,roomCode:string, callback: () => void){
     
-    const Rooms = doc(db,'test/OQyXluqZyGwghmU0cydh');
+    const Rooms = doc(db,'poll/P7m8QPNrZzi5v29BpjJm');
 
     async function writeUserToRoom(){
         const docData = {
@@ -17,7 +17,12 @@ export function AddingUserToRoom (displayName:string,roomCode:string){
             Email: null,
             ID: 1101
         };
-        await setDoc(Rooms, docData);
+        try{
+            await setDoc(Rooms, docData);
+            callback();
+        } catch (error) {
+            console.debug("LOL");
+        }
     }
         writeUserToRoom();
 }

@@ -10,8 +10,7 @@ export default function GuestJoin() {
 
   //Goes to the get started page
   const handleClickL = () => {
-    //void navigate("/poll-lobby")
-    void AddingUserToRoom(displayName, roomCode);
+    void AddingUserToRoom(displayName, roomCode, () => {void navigate("/poll-lobby")});
 
   }
   const handleClickA = () => {
